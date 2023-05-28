@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NostrLink</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 10;
+			font-family: Arial, sans-serif;
+			background-color: #fff;
+			color: #333;
+		}
+
+		header {
+			background-color: #88659b;
+			color: #fff;
+			padding: 10px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			transition: all 0.3s ease-in-out;
+		}
+
+		nav {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
+			max-width: 960px;
+			height: 50px;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 1px;
+			margin: 0 10px;
+			border-radius: 5px;
+			transition: all 0.3s ease-in-out;
+		}
+
+		nav a:hover {
+			background-color: #fff;
+			color: #88659b;
+		}
+
+		main {
+			margin: 70px auto 20px auto;
+			max-width: 960px;
+			padding: 0 20px;
+			background-color: #fff;
+			transition: all 0.3s ease-in-out;
+		}
+
+		section {
+			margin-bottom: 20px;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 5px #ccc;
+			background-color: #f2f2f2;
+		}
+
+		h1, h2, h3 {
+			color: #88659b;
+			margin-top: 0;
+		}
+
+		img {
+			display: block;
+			margin: 20px auto;
+			max-width: 100%;
+		}
+
+		footer {
+			background-color: #88659b;
+			color: #fff;
+			padding: 0px;
+			text-align: center;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+  	align-items: center;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.dark-mode {
+			background-color: #333;
+			color: #fff;
+		}
+
+		.dark-mode section {
+			background-color: #333;
+			color: #fff;
+		}
+
+		.dark-mode nav a {
+			color: #fff;
+		}
+
+		.dark-mode nav a:hover {
+			background-color: #fff;
+			color: #333;
+		}
+		
+	.dark-mode main {
+			background-color: #333;
+			color: #fff;
+		}
+		
+		.dark-mode body {
+			background-color: #333;
+			color: #fff;
+		}
+
+		@media only screen and (min-width: 768px) {
+			body {
+				padding-top: 70px;
+			}
+
+			nav {
+				height: auto;
+			}
+
+			nav a {
+				margin: 0 20px;
+			}
+
+			main {
+				margin-top: 90px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="#nip05">NIP-05 Services</a>
+			<a href="#clients">Nostr Clients</a>
+			<a href="#lightning">Lightning Wallets</a>
+			<a href="#relay">Relay Software</a>
+			<br>
+	  <a href="#keys">Key Tools</a>
+		</nav>
+	</header>
+	<main>
+		<img src="https://github.com/jawsh207/nostr-littlelink/raw/main/images/logo.png" width=”auto” height="auto" alt="NostrLink Logo">
+		<section id="nip05">
+			<h2>NIP-05 Services</h2>
+			<p>NIP-05 enables users to be identified by a human-readable name instead of a long, hard-to-remember public key, making it easier to share their identity with others.	</p>
+			<ul>
+				<li>Pinecones - free NIP-05 <a href="https://pinecones.lol" style="color:#6b5b95;">visit</a></li>
+				<li>zaps.lol - free NIP-05 <a href="https://zaps.lol" style="color:#6b5b95;">visit</a></li>
+			</ul>
+		</section>
+		<section id="clients">
+			<h2>Nostr Clients</h2>
+			<p>A client is a website or app that connects to any number of relays to send and receive events back and forth.</p>
+			<ul>
+				<li>Nostros - a client for Android <a href="https://github.com/KoalaSat/nostros" style="color:#6b5b95;">source</a></li>
+				<li>Plasma - a client for Android <a href="https://github.com/plasma-social/plasma" style="color:#6b5b95;">source</a></li>
+				<li>Damus - a client for iOS <a href="https://github.com/damus-io/damus" style="color:#6b5b95;">source</a></li>
+		  <li>Iris - a web browser client <a href="https://github.com/irislib/iris-messenger" style="color:#6b5b95;">source</a></li>
+		  <li>Gossip - a desktop client <a href="https://github.com/mikedilger/gossip" style="color:#6b5b95;">source</a></li>
+			</ul>
+		</section>
+		<section id="lightning">
+			<h2>Lightning Wallets</h2>
+			<p>Wallets store and manage your funds on the Lightning Network, a payment protocol layered on top of Bitcoin which allows users to send or receive Bitcoin quickly and cheaply.	</p>
+			<ul>
+				<li>Alby - a wallet provider & more <a href="https://getalby.com" style="color:#6b5b95;">visit</a></li>
+				<li>LN.TIPS - a Telegram tipbot and wallet <a href="https://t.me/LightningTipBot" style="color:#6b5b95;">visit</a></li>
+				<li>Zeus - an Android & iOS wallet <a href="https://github.com/ZeusLN/zeus" style="color:#6b5b95;">source</a></li>
+		  <li>Wallet of Satoshi - an Android & iOS wallet <a href="https://walletofsatoshi.com" style="color:#6b5b95;">visit</a></li>
+			</ul>
+		</section>
+		<section id="relay">
+			<h2>Relay Software</h2>
+			<p>Relays act like servers for Nostr. Clients connect to them to send events, which are then relayed to other clients and/or relays. Relays can be public or require payment to use. Anybody can run a relay.	 </p>
+			<ul>
+				<li>Mostr - a bridge between Nostr & Fediverse <a href="https://gitlab.com/soapbox-pub/mostr" style="color:#6b5b95;">source</a></li>
+				<li>nostream - a relay written in TypeScript <a href="https://github.com/Cameri/nostream" style="color:#6b5b95;">source</a></li>
+				<li>s0str - a private Nostr relay <a href="https://github.com/metasikander/s0str" style="color:#6b5b95;">source</a></li>
+			</ul>
+		</section>
+ 	<section id="keys">
+			<h2>Key Tools</h2>
+			<p>Nostr keypairs are what you use to access Nostr. Always keep your private key safe and never share it, think of it like a password. Your public is like a username and able to be safely shared.</p>
+			<ul>
+				<li>Glasnostr - a tool to mine vanity keys <a href="https://github.com/eyelight/glasnostr" style="color:#6b5b95;">visit</a></li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p>🧡 <span id="year"></span> NostrLink  </p>
+		<div>
+			<label for="dark-mode-toggle">Dark Mode:</label>
+			<input type="checkbox" id="dark-mode-toggle" onclick="toggleDarkMode()">
+		</div>
+		<script>
+			document.getElementById("year").innerHTML = new Date().getFullYear();
+
+			function toggleDarkMode() {
+				var html = document.getElementById("html");
+				html.classList.toggle("dark-mode");
+			}
+		</script>
+	</footer>
+</body>
+</html>
